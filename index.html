@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>POP QUIZ</title>
+		<link rel="stylesheet" href="css/semantic.css">
+		<link rel="stylesheet" href="css/deck.core.css">
+		<link rel="stylesheet" href="css/card/web-2.0.css">
+
+		<link rel="stylesheet" href="css/transition/horizontal-slide.css">
+
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/semantic.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/deck.core.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+		
+
+
+	</head>
+
+	<body>
+		<div class = "ui menu">
+			<div class="header item">P.O.P. QUIZ</div>
+			<a class = "active item">Home</a>
+		</div>
+
+		  <div class="ui responsive grid">
+		    <div class="ui column">
+		      <h2 class="ui header">
+		        <i class="circular emphasized code icon"></i>
+		        <div class="content">
+		          Personality of Programming (P.O.P.) Quiz
+		          <div class="sub header">Find your soul mate
+		          </div>
+		        </div>
+		      </h2>
+		      <div class="ui horizontal section divider">
+		        <i class="circular heart icon"></i>
+		      </div>
+		      <div class = "ui responsive grid">
+		      <div class= "column">
+		      <div class="deck-container">
+			      	<section class="slide">
+			      		<h2> Question 1 </h2>
+			      		<p>Have you ever programmed before? </p>
+						<div class = "ui button">
+						<a href="javascript:POP.Answer(true,'beginner',1)">Yes</a></div>
+						<div class = "ui button">
+						<a href="javascript:window.alert(POP.getPrefScore('beginner'))">No</a></div>
+						
+
+					</section>
+
+					<section class="slide">
+						<h1>Content</h1>
+					</section>
+
+					<section class="slide">
+						<h1>Here</h1>
+					</section>
+
+
+			     </div>
+			   </div>
+			   </div>
+			   </div>
+		    
+
+
+
+			</div>
+
+	  <script>
+		$(function() {
+			$.deck('.slide');
+		});
+	</script>
+
+	</body>
+
+</html>
