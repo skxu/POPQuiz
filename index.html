@@ -10,7 +10,7 @@
 
 		<script src="js/jquery-1.7.2.min.js"></script>
 		<script src="js/semantic.js"></script>
-		<script src="js/app.js"></script>
+		
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/deck.core.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -36,28 +36,75 @@
 		        </div>
 		      </h2>
 		      <div class="ui horizontal section divider">
-		        <i class="circular heart icon"></i>
+		        <i id="joke" class="circular heart icon" title=""></i>
 		      </div>
 		      <div class = "ui responsive grid">
 		      <div class= "column">
-		      <div class="deck-container">
+		      <div id="quiz" class="deck-container">
 			      	<section class="slide">
-			      		<h2> Question 1 </h2>
-			      		<p>Have you ever programmed before? </p>
+			      		<h4><p>Have you ever programmed before?</p> </h4>
+
+			      		<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+			      		<a href="javascript:POP.Answer('beginner',-1)">
 						<div class = "ui button">
-						<a href="javascript:POP.Answer(true,'beginner',1)">Yes</a></div>
+						Yes</div></a>
+						<a href="javascript:POP.popJoke('lol n00b');POP.Answer('beginner',1)">
 						<div class = "ui button">
-						<a href="javascript:window.alert(POP.getPrefScore('beginner'))">No</a></div>
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
 						
 
 					</section>
 
 					<section class="slide">
-						<h1>Content</h1>
+						<h4><p>Which scenario are you more comfortable with? <p></h4>
+						<p> A: Each morning, if trash is full, empty it</p>
+						<p> B: Function(trash): trash >= full, return "empty it" </p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.Answer('imperative',1)">
+						<div class = "ui button">
+						A</div></a>
+						<a href="javascript:POP.popJoke('really?');POP.Answer('functional',1)">
+						<div class = "ui button">
+						B</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
 					</section>
 
 					<section class="slide">
-						<h1>Here</h1>
+						<h4><p>Does this make sense?</p></h4>
+						<p> StarCraft is a type of RTS (real time strategy) game which is a type of computer game which is a type of game which is a type of entertainment which is a type of thing.</p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.Answer('OOP',1)">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.Answer('OOP',-1)">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
 					</section>
 
 
@@ -70,12 +117,7 @@
 
 
 			</div>
-
-	  <script>
-		$(function() {
-			$.deck('.slide');
-		});
-	</script>
+	  <script src="js/app.js"></script>
 
 	</body>
 

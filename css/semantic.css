@@ -4011,6 +4011,7 @@ i.massive.icon {
 *******************************/
 /* Prototype */
 .ui.button {
+  
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -4047,6 +4048,12 @@ i.massive.icon {
   -o-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   -ms-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.bottom {
+  position: absolute;
+  bottom:0px;
 }
 /*--------------
      Count

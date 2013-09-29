@@ -174,14 +174,16 @@ that use the API provided by core.
 			/* Remove any previous bindings, and rebind key events */
 			$d.unbind('keydown.deck').bind('keydown.deck', function(e) {
 				if (e.which === options.keys.next || $.inArray(e.which, options.keys.next) > -1) {
-					methods.next();
+					//methods.next();
 					e.preventDefault();
 				}
 				else if (e.which === options.keys.previous || $.inArray(e.which, options.keys.previous) > -1) {
-					methods.prev();
+					//methods.prev();
 					e.preventDefault();
 				}
-			})
+			}
+
+			)
 			/* Stop propagation of key events within editable elements */
 			.undelegate('input, textarea, select, button, meter, progress, [contentEditable]', 'keydown', esp)
 			.delegate('input, textarea, select, button, meter, progress, [contentEditable]', 'keydown', esp);
