@@ -10,7 +10,7 @@
 
 		<script src="js/jquery-1.7.2.min.js"></script>
 		<script src="js/semantic.js"></script>
-		
+		<script src="js/Chart.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/deck.core.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -49,10 +49,10 @@
 			      		<div class="column">
 			      		</div>
 			      		<div class="column">
-			      		<a href="javascript:POP.Answer('beginner',-1)">
+			      		<a href="javascript:POP.popJoke('hello world');POP.Answer('beginner',1)">
 						<div class = "ui button">
 						Yes</div></a>
-						<a href="javascript:POP.popJoke('lol n00b');POP.Answer('beginner',1)">
+						<a href="javascript:POP.popJoke('lol n00b');POP.Answer('beginner',10)">
 						<div class = "ui button">
 						No</div></a>
 						</div>
@@ -65,7 +65,7 @@
 					</section>
 
 					<section class="slide">
-						<h4><p>Which scenario are you more comfortable with? <p></h4>
+						<h4><p>Which scenario are you more comfortable with? </p></h4>
 						<p> A: Each morning, if trash is full, empty it</p>
 						<p> B: Function(trash): trash >= full, return "empty it" </p>
 						<div class="ui center aligned three column grid">
@@ -73,10 +73,10 @@
 			      		<div class="column">
 			      		</div>
 			      		<div class="column">
-						<a href="javascript:POP.Answer('imperative',1)">
+						<a href="javascript:POP.popJoke('neat');POP.Answer('imperative',3)">
 						<div class = "ui button">
 						A</div></a>
-						<a href="javascript:POP.popJoke('really?');POP.Answer('functional',1)">
+						<a href="javascript:POP.popJoke('really?');POP.Answer('functional',3)">
 						<div class = "ui button">
 						B</div></a>
 						</div>
@@ -87,17 +87,17 @@
 					</section>
 
 					<section class="slide">
-						<h4><p>Does this make sense?</p></h4>
+						<h4><p>Would you categorize like this?</p></h4>
 						<p> StarCraft is a type of RTS (real time strategy) game which is a type of computer game which is a type of game which is a type of entertainment which is a type of thing.</p>
 						<div class="ui center aligned three column grid">
 			      		<div class="row">
 			      		<div class="column">
 			      		</div>
 			      		<div class="column">
-						<a href="javascript:POP.Answer('OOP',1)">
+						<a href="javascript:POP.Answer('OOP',5)">
 						<div class = "ui button">
 						Yes</div></a>
-						<a href="javascript:POP.Answer('OOP',-1)">
+						<a href="javascript:POP.Answer('OOP',1)">
 						<div class = "ui button">
 						No</div></a>
 						</div>
@@ -108,15 +108,198 @@
 					</section>
 
 
+					<section class="slide">
+						<h4><p>Is program performance extremely important?</p></h4>
+						<p>If you're not sure or are new to programming, then your answer should be no. </p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.popJoke('we got a badass over here'); POP.Answer('lowlevel',5)">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.popJoke('^_^'); POP.Answer('lowlevel',1)">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+
+					<section class="slide">
+						<h4><p>Would you categorize like this?</p></h4>
+						<p>A lot of people have the same type of laptop: a macbook. However, each person's macbook is customized to be different (e.g. wallpaper, files, programs) </p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.Answer('OOP',5)">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.popJoke(':('); POP.Answer('OOP',1); ">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+
+					<section class="slide">
+						<h4><p>Do you agree?</p></h4>
+						<p>You want a fast to pick up language, so you can make simple apps ASAP.</p> 
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.popJoke('hey, me too'); POP.Answer('scripting',4)">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.Answer('scripting',0.5)">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+					<section class="slide">
+						<h4><p>Are you descriptive?</p></h4>
+						<p> If given a problem, would you create a model that describes the problem? Would you create a description of the solution rather than creating a direct solution?</p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.popJoke('describe me like one of your french girls'); POP.Answer('functional',4);">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.Answer('functional',0);">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+					<section class="slide">
+						<h4><p>Webapps?</p></h4>
+						<p>Do you plan on making web applications (e.g. This is one) or interactive websites? </p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.popJoke('we need moar internets'); POP.Answer('webdev',7);">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.popJoke('too much internets'); POP.Answer('webdev',1);">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+					<section class="slide">
+						<h4><p>Allpurpose?</p></h4>
+						<p>Do you want your language to be allpurpose? (versus something specific like web-development or data-analysis) </p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.popJoke('Jack of all trades'); POP.Answer('allpurpose',5);">
+						<div class = "ui button">
+						Yes</div></a>
+						<a href="javascript:POP.popJoke('All I need is you'); POP.Answer('allpurpose',1);">
+						<div class = "ui button">
+						No</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+					<section class="slide">
+						<h4><p>How do you give directions? </p></h4>
+						<p> A: Eat bacon</p>
+						<p> B: Slaughter pig, cut pork belly with meat to fat ratio 1:3, season, heat at 150 degrees F for 2 hours, use fork, stick in mouth.</p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.popJoke('simplicity is nice');POP.Answer('lowlevel',0.5);">
+						<div class = "ui button">
+						A</div></a>
+						<a href="javascript:POP.popJoke('. . .');POP.Answer('lowlevel',4)">
+						<div class = "ui button">
+						B</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+					<section class="slide">
+						<h4><p>When asked a task.. </p></h4>
+						<p> (e.g. Drive to point A), which scenario is more likely?</p>
+						<p> A: You think about the directions (step by step instructions).</p>
+						<p> B: You think about the requirements to get there </p>
+						<div class="ui center aligned three column grid">
+			      		<div class="row">
+			      		<div class="column">
+			      		</div>
+			      		<div class="column">
+						<a href="javascript:POP.Answer('imperative',3);POP.scoreLanguage();">
+						<div class = "ui button">
+						A</div></a>
+						<a href="javascript:POP.popJoke('cute');POP.Answer('imperative',1);POP.scoreLanguage();">
+						<div class = "ui button">
+						B</div></a>
+						</div>
+						<div class="column">
+						</div>
+						</div>
+						</div>
+					</section>
+
+
+
 			     </div>
-			   </div>
-			   </div>
-			   </div>
-		    
+
+			     <div class="ui center responsive one column grid">
+	      		<div class="row">
+	      		<div class="column">
+	      		 <div id="winner">
+	      		 </div>
+			     <canvas id="results" width="400" height="400"></canvas>
+			     </div>
+				</div>
+
+				</div>
 
 
+				
 
-			</div>
+
 	  <script src="js/app.js"></script>
 
 	</body>
